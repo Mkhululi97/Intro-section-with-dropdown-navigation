@@ -1,5 +1,5 @@
 const body = document.querySelector("body");
-const header = document.getElementById("header");
+const navigation = document.getElementById("navigation");
 const heroImage = document.getElementById("hero-image");
 const mobileBtn = document.querySelector(".btn-mobile-nav");
 const features = document.getElementById("Features-menu-item");
@@ -16,8 +16,8 @@ const arrowBtnCompany = document.querySelector(
 mobileBtn.addEventListener("click", function () {
   mobileBtn.classList.toggle("open-mobile-menu");
   body.classList.toggle("modal");
-  header.classList.toggle("nav-open");
-  if (header.classList.contains("nav-open")) {
+  navigation.classList.toggle("nav-open");
+  if (navigation.classList.contains("nav-open")) {
     heroImage.style.filter = "brightness(50%)";
     heroImage.style.opacity = "80%";
   } else {
