@@ -1,18 +1,32 @@
 const body = document.querySelector("body");
-const navigation = document.getElementById("navigation");
+const navigation = document.querySelector(".navigation");
 const heroImage = document.getElementById("hero-image");
 const mobileBtn = document.querySelector(".btn-mobile-nav");
-const features = document.getElementById("Features-menu-item");
-const company = document.getElementById("Company-menu-item");
-const featuresMenuItems = document.querySelector(".dropdown--features");
-const companyMenuItems = document.querySelector(".dropdown--company");
-const arrowBtnFeatures = document.querySelector(
-  ".expand-collaps-menu.features-btn"
+// MOBILE
+const featuresMobile = document.querySelector(".Features-mobile-menu-item");
+const companyMobile = document.querySelector(".Company-mobile-menu-item");
+const featuresDropdownMobile = document.querySelector(
+  ".dropdown--features--mobile"
 );
-const arrowBtnCompany = document.querySelector(
-  ".expand-collaps-menu.company-btn"
+const companyDropdownMobile = document.querySelector(
+  ".dropdown--company--mobile"
 );
-// console.log();
+const arrowBtnFeaturesMobile = document.querySelector(".features-mobile-btn");
+const arrowBtnCompanyMobile = document.querySelector(".company-mobile-btn");
+
+// DESKTOP
+// const featuresDesktop = document.querySelector(".Features-Desktop-menu-item");
+// const companyDesktop = document.querySelector(".Company-Desktop-menu-item");
+// const featuresDropdownDesktop = document.querySelector(
+//   ".dropdown--features--Desktop"
+// );
+// const companyDropdownDesktop = document.querySelector(
+//   ".dropdown--company--Desktop"
+// );
+// const arrowBtnFeaturesDesktop = document.querySelector(".features-Desktop-btn");
+// const arrowBtnCompanyDesktop = document.querySelector(".company-Desktop-btn");
+
+// EVENT LISTNERS
 mobileBtn.addEventListener("click", function () {
   mobileBtn.classList.toggle("open-mobile-menu");
   body.classList.toggle("modal");
@@ -25,11 +39,16 @@ mobileBtn.addEventListener("click", function () {
     heroImage.style.opacity = "revert";
   }
 });
-features.addEventListener("click", function () {
-  featuresMenuItems.classList.toggle("hide-element");
-  arrowBtnFeatures.classList.toggle("closed--dropdown");
+
+featuresMobile.addEventListener("click", function () {
+  // alert("features");
+  console.log(featuresDropdownMobile);
+  featuresDropdownMobile.classList.toggle("hide-element");
+  arrowBtnFeaturesMobile.classList.toggle("closed--dropdown");
 });
-company.addEventListener("click", function () {
-  companyMenuItems.classList.toggle("hide-element");
-  arrowBtnCompany.classList.toggle("closed--dropdown");
+
+companyMobile.addEventListener("click", function () {
+  console.log(companyMobile);
+  companyDropdownMobile.classList.toggle("hide-element");
+  arrowBtnCompanyMobile.classList.toggle("closed--dropdown");
 });
