@@ -32,15 +32,13 @@ html {
   background-color: hsla(0, 0%, 8%, 0.5);
 }
 .logo-hamburger,
-.nav-container,
 .hero,
 .features-menu,
 .secondary-nav-mobile ul,
 .svg-container {
   display: flex;
 }
-.logo-hamburger,
-.nav-container {
+.logo-hamburger {
   justify-content: space-between;
   align-items: center;
 }
@@ -56,7 +54,6 @@ html {
   width: 65%;
   height: 100vh;
   padding-inline: 26px;
-  /* transform: translateX(100%); */
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -207,10 +204,37 @@ img {
     align-items: center;
     justify-content: space-between;
   }
+  /* ======================== */
+  /* MAKING THE DROPDOWN MENU WORK FOR FEATURES AND COMPANY LIST ITEMS */
+  .primary-nav-desktop {
+    position: relative;
+  }
+  .dropdown--features--desktop,
+  .dropdown--company--desktop {
+    background-color: #fff;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 28px;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.14);
+    -webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.14);
+  }
+  .dropdown--features--desktop {
+    left: -58px;
+  }
+  .dropdown--company--desktop {
+    left: 115px;
+  }
+  /* ======================== */
   ul {
     list-style-type: none;
   }
   /* #### HERO #### */
+  .hero {
+    margin-top: 98px;
+  }
   .container {
     padding-inline: 20px;
   }
@@ -218,7 +242,7 @@ img {
     text-align: revert;
     font-size: 4.6rem;
     padding-top: 50px;
-    padding-right: 100px;
+    padding-right: 25px;
   }
   .description {
     text-align: revert;
@@ -257,6 +281,7 @@ img {
   }
   .hero {
     padding-bottom: 50px;
+    margin-top: 58px;
   }
   .heading-primary {
     font-size: 8.6rem;
@@ -285,4 +310,3 @@ img {
     height: 9.8rem;
   }
 }
-/* ====================== */
