@@ -95,7 +95,7 @@ ion-icon {
   width: 4.4rem;
 }
 .expand-collaps-menu {
-  margin-left: 14px;
+  margin-left: 4px;
 }
 .btn-mobile-nav,
 .expand-collaps-menu {
@@ -141,7 +141,7 @@ a:link:hover {
   background-color: transparent;
 }
 .btn--register {
-  padding: 10px 0px;
+  padding: 10px 18px;
   border: 2px solid hsl(0, 0%, 41%);
   border-radius: 10px;
   background-color: transparent;
@@ -201,6 +201,9 @@ img {
   .container {
     padding-inline: 20px;
   }
+  .logo-nav {
+    padding: 25px 50px;
+  }
   .heading-primary {
     text-align: revert;
     font-size: 4.6rem;
@@ -222,11 +225,8 @@ img {
     margin-top: revert;
   }
   ul {
-    gap: 20px;
+    gap: 43px;
     display: flex;
-  }
-  .logo-nav {
-    padding: 12px;
   }
   .logo-nav,
   .logo-primary-nav {
